@@ -1,18 +1,55 @@
 <head>
     <title>Mon premier site pro</title>
     <meta charset = "utf-8">
-    <link rel="stylesheet" href="materialize/css/materialize.css">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Là, le cv</h1>
 
-    <nav class="menu">
-        <ul>
+    <header class="center">
+        <h1>Le site trop bien</h1>
+    </header>
+
+    <nav>
+        <div class="nav-wrapper">
+            <ul id="nav-mobile" class="brand-logo right">
+                <a href="index.html">
+                    <img src="Image/personne.jfif" width=60px height=60px alt="image de moi">
+                </a>
+            </ul>
+            
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
             <li><a href="index.html">Accueil</a></li>
-            <li><a href="cv.html">CV</a></li>
+            <li class="active"><a href="cv.html">CV</a></li>
             <li><a href="hobbies.html">Hobbies</a></li>
-        </ul>
+          </ul>
+        </div>
     </nav>
+
+    <p>La la ya tout le texte</p>
+    <div class="grande-boite">
+        <div class="boite">
+            <iframe src="Image/CV moderne blanc épuré.pdf" frameborder="0" height="800px" width="1000px"></iframe>
+        </div>
+    </div>
+    
+    <p> et là y en a plus</p>
+
+    <footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l4 offset-l2 s12">
+              <h4 class="white-text">Pied de page</h4>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2023 Copyright Text
+          <p class="grey-text text-lighten-4 right">Le site de Camille</p>
+          </div>
+        </div>
+      </footer>
         
 </body>
