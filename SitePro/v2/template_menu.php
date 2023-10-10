@@ -15,7 +15,7 @@
                     </a>
                 </ul>
         ";
-        echo "<ul id=\"nav-mobile\" class=\"left hide-on-med-and-down\">";
+        echo "<ul id=\"nav-mobile\" class=\"left\">";
         foreach($mymenu as $pageId => $pageParameters) {
             if($currentPageId == $pageId){
             echo "<li class=\"active\"><a href=\"${pageId}.php\">${pageParameters}</a>";

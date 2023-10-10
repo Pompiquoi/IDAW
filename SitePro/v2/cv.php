@@ -1,7 +1,7 @@
 <head>
     <title>Mon premier site pro</title>
     <meta charset = "utf-8">
-    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="materialize/css/materialize.css">
     <link rel="stylesheet" href="style.css">
 </head>
 

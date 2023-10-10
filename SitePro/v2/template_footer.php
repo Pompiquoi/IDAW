@@ -20,7 +20,7 @@
             </div>
             <div class="footer-copyright">
             <div class="container">
-            © 2023 Copyright Text
+            <p class="grey-text text-lighten-4 left">© 2023 Copyright Text</p>
             <p class="grey-text text-lighten-4 right">Le site de Camille</p>
             </div>
             </div>
