@@ -1,7 +1,7 @@
 <?php
     function renderMenuToHTML($currentPageId) {
         $mymenu = array(
-        'index' => 'Accueil',
+        'accueil' => 'Accueil',
         'cv' => 'Cv',
         'hobbies' => 'Hobbies',
         'infotech' => 'Les infos techniques'

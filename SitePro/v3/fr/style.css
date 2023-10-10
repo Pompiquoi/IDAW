@@ -26,12 +26,13 @@
     
 .boite{
     width: 40%;
-    border: 2px solid black;
-    box-sizing: content-box;
+    border: 0px solid black;
+    box-sizing: border-box;
     margin: 10px;
     flex: 3;
     align-items: center;
     display: flex;
+    justify-content: space-around;
 }
 
 
