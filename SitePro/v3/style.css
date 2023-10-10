@@ -1,0 +1,41 @@
+.grande-boite-col{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
+    border: 0px solid blue;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 2;
+}
+
+.grande-boite-lig{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    border: 0px solid blue;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+}
+    
+.boite{
+    width: 40%;
+    border: 2px solid black;
+    box-sizing: content-box;
+    margin: 10px;
+    /* flex: 3; */
+    align-items: center;
+    display: flex;
+}
+
+
+.contenu-image{
+    height: auto;
+    flex: 3;
+}
