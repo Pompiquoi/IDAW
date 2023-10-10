@@ -1,10 +1,14 @@
 <?php
-    function renderMenuToHTML($currentPageId) {
+    function renderMenuToHTML($currentPageId, $currentLang) {
         $mymenu = array(
         'accueil' => 'Accueil',
         'cv' => 'Cv',
         'hobbies' => 'Hobbies',
         'infotech' => 'Les infos techniques'
+        );
+        $mylang = array(
+        'fr',
+        'en'
         );
         echo "
         <nav>   
