@@ -40,18 +40,10 @@
         </form>
         
         <?php
-
+        $val = 0;
         $val = $_POST["username"];
+        echo $val;
 
-        if($val < 0){
-            echo "Nombre positif seulement <br>";
-        }else{
-            for($x = 1; $x <= $val; $x++){    
-                $val = $val * $x;
-            }
-
-            echo $val . "<br>";
-        }
         ?>
     </body>
 </html>
