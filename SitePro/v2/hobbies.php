@@ -13,6 +13,7 @@
 
 <?php
   require_once('template_menu.php');
+  renderMenuToHTML('hobbies');
 ?>
 
     <p>La la ya tout le texte</p>

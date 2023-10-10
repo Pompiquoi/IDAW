@@ -15,6 +15,7 @@
 
 <?php
   require_once('template_menu.php');
+  renderMenuToHTML('infotech');
 ?>
     
     <p> Toutes les infos à savoir sont là </p>
