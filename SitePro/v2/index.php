@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mon premier site pro</title>
+    <title>Mon premier site pro | index</title>
     <meta charset = "utf-8">
     <link rel="stylesheet" href="materialize/css/materialize.min.css">
     <link rel="stylesheet" href="style.css">
@@ -15,6 +15,7 @@
 
 <?php
   require_once('template_menu.php');
+  renderMenuToHTML('index');
 ?>
 
     <p>La la ya tout le texte &#128004</p>
