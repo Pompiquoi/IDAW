@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title>Le menu</title>
+        <title>The menu</title>
         <link rel="stylesheet" 
         href="style.css"
         href="materialize/css/materialize.css"
@@ -14,14 +14,14 @@
             <div class="container">
             <div class="row">
                 <div class="col l4 offset-l2 s12">
-                <h4 class="white-text">Pied de page</h4>
+                <h4 class="white-text">The footer</h4>
                 </div>
             </div>
             </div>
             <div class="footer-copyright">
             <div class="container">
             <p class="grey-text text-lighten-4 left">© 2023 Copyright Text</p>
-            <p class="grey-text text-lighten-4 right">Le site de Camille</p>
+            <p class="grey-text text-lighten-4 right">Camille's site</p>
             </div>
             </div>
         </footer>

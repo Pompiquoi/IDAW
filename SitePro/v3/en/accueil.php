@@ -6,7 +6,7 @@
         <!-- /div-->
         <div class="grande-boite-col">
             <div class="boite">
-                <p>Titre de l'image</p>
+                <p>Picture's title</p>
             </div>
             <div class="boite">
                 <p>Here is some more information about this product that is only revealed once clicked on.</p>

@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title>Le menu</title>
+        <title>The menu</title>
         <link rel="stylesheet" 
         href="style.css"
         href="materialize/css/materialize.css"
@@ -11,7 +11,7 @@
     <body>
 
         <header class="center">
-            <h1>Le site trop bien</h1>
+            <h1>The amazing site</h1>
         </header>
 
         

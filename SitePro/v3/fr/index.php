@@ -19,18 +19,15 @@
         $currentPageId = $_GET['page'];
       }
 
-      if(isset($_GET['lang'])) {
-        $currentLang = $_GET['lang'];
-      }
     ?>
 
     <?php
-      renderMenuToHTML($currentPageId, $currentLang);
+      renderMenuToHTML($currentPageId);
     ?>
 
     <section class="corps">
       <?php
-        $pageToInclude = $currentLang . "/" . $currentPageId . ".php";
+        $pageToInclude = "../" . $currentLang . "/" . $currentPageId . ".php";
         if(is_readable($pageToInclude))
           require_once($pageToInclude);
         else
