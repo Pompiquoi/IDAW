@@ -11,7 +11,7 @@
     <body>
 
         <header class="center">
-            <h1>Le site trop bien</h1>
+            <h2>Le site de Serge Franc</h2>
         </header>
 
         

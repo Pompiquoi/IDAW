@@ -5,7 +5,7 @@
 
     <p>La la ya tout le texte</p>
     <div class="grande-boite-lig">
-        <div class="boite">
+        <div class="boite redu">
             <iframe src="Image/CV moderne blanc épuré.pdf" frameborder="0" height="800px" width="1000px"></iframe>
         </div>
     </div>
