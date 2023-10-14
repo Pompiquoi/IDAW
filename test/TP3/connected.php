@@ -29,8 +29,8 @@
     $errorText = "";
     $successfullyLogged = false;
 
-    session_name( $_POST['login']);
     session_start();
+    
 
 
     if(isset($_POST['login']) && isset($_POST['password'])) {
@@ -42,14 +42,32 @@
             $login = $tryLogin;
         } else
             $errorText = "Erreur de login/password";
-    } else
-        $errorText = "Merci d'utiliser le formulaire de login";
-        if(!$successfullyLogged) {
-            echo $errorText;
-    } else {
-        echo "<h1>Bienvenue ".$login."</h1>";
+    } 
+    $errorText = "Merci d'utiliser le formulaire de login";
+    if(!$successfullyLogged) {
+        echo $errorText;
+    } elseif(isset($_SESSION['login'])){
+        $login = $_SESSION['login'];
+        echo "<h1>Bienvenue ". $login ."</h1>";
+        echo "<a href = \"balade.php\">se balader </a>";
+    
     }
+
+    else{
+        echo "<h1>Bienvenue ". $login ."</h1>";
+        echo "<a href = \"balade.php\">se balader </a>";
+        $_SESSION['login'] = $login;
+    }
+        
+        
+    
+    print($successfullyLogged);
+
+    $_POST['sucessLog'] = $successfullyLogged;
+    print($_POST['sucessLog']);
 ?>
-<a href=""></a>
+    <a href="index.php">
+        Se déconnecter
+    </a>
 </body>
 </html>

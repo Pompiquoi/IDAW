@@ -1,4 +1,11 @@
 <form id="login_form" action="connected.php" method="POST">
+    <?php 
+        session_start();
+        session_destroy();
+        session_unset();
+        
+        
+    ?>
     <table>
         <tr>
             <th>Login :</th>
