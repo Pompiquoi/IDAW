@@ -10,9 +10,11 @@
         <nav>   
             <div class=\"nav-wrapper\">
                 <ul id=\"nav-mobile\" class=\"brand-logo right\">
-                    <a href=\"../fr/index.php\">
-                        <img src=\"Image/francais.png\" width=60px height=60px alt=\"image de moi\">
-                    </a>
+                    <div class = \"boite\">
+                        <a href=\"../fr/index.php?page=" . $currentPageId ."\">
+                            <img src=\"Image/francais.png\" width=50px height=50px alt=\"image de moi\">
+                        </a>
+                    </div>
                 </ul>
         ";
         echo "<ul id=\"nav-mobile\" class=\"left\">";
