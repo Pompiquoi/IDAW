@@ -1,0 +1,11 @@
+.donnees{
+    border-radius: 10px;
+    border: 1px solid orangered;
+    padding: 10px;
+    background-color: lightgray;
+    box-shadow: 10px 10px 10px rgb(150, 150, 150);
+}
+
+.titre{
+    color: brown;
+}
