@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -6,16 +7,23 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>    
-        
-        <form action="ajout_db.php" method="POST">
+        <?php
+            $id_modif = $_POST['modif_id'];
+            $name_modif = $_POST['modif_name'];
+            $mail_modif = $_POST['modif_mail'];
+        ?>
+            <form action="modif_vali_db.php" method="POST">
             <table>
                 <tr>
+                    <td><input type="hidden" name="id_modif" value= <?php echo $id_modif;?> ></td>
+                </tr>
+                <tr>
                     <th>Nom :</th>
-                    <td><input type="text" name="name"></td>
+                    <td><input type="text" name="name_modif" value=<?php echo $name_modif;?> required minlength="1"></td>
                 </tr>
                 <tr>
                     <th>Mail</th>
-                    <td><input type="text" name="mail"></td>
+                    <td><input type="email" name="mail_modif" value=<?php echo $mail_modif;?> required minlength="1"></td>
                 </tr>
                 <tr>
                     <th></th>

@@ -34,8 +34,6 @@
 
             $pdo -> exec($db);
 
-            
-
             $pdo = NULL;
         ?>
     </body>

@@ -42,15 +42,20 @@
 
                 foreach($users as $user){
                     echo "<tr><td>" . $user -> name . "</td><td>" . $user -> email . "</td>
-                    <td><a href=\" \">
-                            <img src=\"images/modifer.png\" height = '30px'>
-                        </a>
-                    </td>
+                    <form action = \"modif_db.php\" method = \"POST\">
+                    <input name=\"modif_id\" type = \"hidden\" value = ". $user -> id .">
+                    <input name=\"modif_name\" type = \"hidden\" value = ". $user -> name .">
+                    <input name=\"modif_mail\" type = \"hidden\" value = " . $user -> email . ">
                     <td>
-                        <a href=\"\">
-                            <img src=\"images/supprimer.png\" height = '30px'>
-                        </a>
+                        <input type= \"image\" src=\"images/modifier.png\" height = '30px' alt = \"modif\">
                     </td>
+                    </form>
+                    <form action = \"suppr_db.php\" method = \"POST\">
+                    <input name=\"suppr_id\" type = \"hidden\" value = ". $user -> id .">
+                    <td>
+                            <input type=\"image\" src=\"images/supprimer.png\" height = '30px' alt = \"supprimer\">
+                    </td>
+                    </form>
                     </tr>";
                 }
                 echo "</table>";
@@ -67,11 +72,11 @@
             <table>
                 <tr>
                     <th>Nom :</th>
-                    <td><input type="text" name="name"></td>
+                    <td><input type="text" name="name" required minlength="1"></td>
                 </tr>
                 <tr>
                     <th>Mail</th>
-                    <td><input type="text" name="mail"></td>
+                    <td><input type="email" name="mail" required minlength="1"></td>
                 </tr>
                 <tr>
                     <th></th>

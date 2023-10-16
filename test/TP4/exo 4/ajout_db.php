@@ -40,6 +40,8 @@
             
 
             $pdo = NULL;
+
+            header("location: users.php");
         ?>
 
         <a href="users.php">Revenir à l'accueil</a>

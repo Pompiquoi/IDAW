@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Données Modifiée avec succès</h1>  
+        <h1>Données rajoutée avec succès</h1>  
         <?php
             require_once('config.php');
 
@@ -28,18 +28,12 @@
                 echo 'Erreur : '.$erreur->getMessage();
             }
 
-            $id = $_POST['id_modif'];
-            $name = $_POST['name_modif'];
-            $mail = $_POST['mail_modif'];
+            $id = $_POST['suppr_id'];
 
-            $sql = 'UPDATE `users` SET `name`=:name, `email`= :mail WHERE `id`=:id';
+            $sql = 'DELETE FROM users WHERE id = :id';
             $cmd = $pdo->prepare($sql);
             $cmd -> bindParam(':id', $id);
-            $cmd -> bindParam(':name', $name);
-            $cmd -> bindParam(':mail', $mail);
             $cmd->execute();
-
-            //INSERT INTO `users`(`name`, `email`) VALUES (:name,:mail)
 
             $pdo = NULL;
 
