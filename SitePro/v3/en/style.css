@@ -1,71 +1,63 @@
 .grande-boite-col{
 
     display: flex;
-    
     align-items: center;
-    
     justify-content: space-around;
-    
     align-content: space-around;
-    
     border: 0px solid blue;
-    
     box-sizing: border-box;
-    
     flex-wrap: wrap;
-    
     flex-direction: column;
-    
     flex: 2;
-    }
+}
     
-    .grande-boite-lig{
-    
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        align-content: center;
-        border: 0px solid blue;
-        box-sizing: border-box;
-        flex-wrap: wrap;
-        flex-direction: row;
-        gap: 20px;
-        overflow: hidden;
-        padding: 12px;
-    }
+.grande-boite-lig{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    border: 0px solid blue;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    overflow: hidden;
+    padding: 12px;
+}
         
-    .boite{
-        width: auto;
-        box-sizing: border-box;
-        margin: 10px;
-        align-items: center;
-        display: flex;
-        justify-content: space-around;
-        gap: 20px;
-        flex: 2;
-        border-radius: 10px;
-    }
-    
-    .boite.redu{
-        width: 40%;
-    }
-    
-    .boite.center{
-        width: auto;
-        border: 1px solid black;
-        padding: 5px;
-        justify-content: center;
-        padding-bottom: 20px;
-    }
-    
-    .boite.coloree{
-        background-color: rgb(61, 73, 199);
-        color: rgb(205, 205, 76);
-    }
-    
-    .contenu-image{
-        height: auto;
-        flex: 3;
-    }
+.boite{
+    width: auto;
+    box-sizing: border-box;
+    margin: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex: 2;
+    border-radius: 10px;
+}
+
+.boite.redu{
+    width: 40%;
+}
+
+.boite.center{
+    width: auto;
+    border: 1px solid black;
+    padding: 5px;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.boite.coloree{
+    background-color: rgb(61, 73, 199);
+    color: rgb(205, 205, 76);
+}
+
+.contenu-image{
+    height: auto;
+    flex: 3;
+}
     
     
