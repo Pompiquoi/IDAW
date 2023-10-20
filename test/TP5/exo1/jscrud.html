@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <title>tabletest</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="materialize/css/materialize.css">
+</head>
+
+<body>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Nom</th>
+                <th scope="col">Prenom</th>
+                <th scope="col">Date de naissance</th>
+                <th scope="col">Aime le cours Web</th>
+                <th scope="col">Remarques</th>
+                <th scope="col">CRUD</th>
+            </tr>
+        </thead>
+        <tbody id="studentsTableBody">
+        </tbody>
+    </table>
+    <form id="addStudentForm" action="" onsubmit="onFormSubmit();">
+        <div class="form-group row" width="300px">
+            <label for="inputNom" class="col-sm-2 col-form-label">Nom*</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputNom" required value="">
+            </div>
+            <label for="inputPrenom" class="col-sm-2 col-form-label">Prénom</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputPrenom" value="">
+            </div>
+            <label for="inputDate" class="col-sm-2 col-form-label">Date de naissance</label>
+            <div class="col-sm-3">
+                <input type="date" class="form-control" id="inputDate" value="">
+            </div>
+            <label for="inputAime" class="col-sm-2 col-form-label">Aime le cours Web</label>
+            <div class="input-field col-sm-3">
+                <select id="inputAime">
+                    <option value="Oui" selected>Oui</option>
+                    <option value="Bcp">Beaucoup</option>
+                    <option value="Alf">À la folie !</option>
+                    <option value="Pdt">Pas du tout</option>
+                </select>
+            </div>
+            <label for="inputRmq" class="col-sm-2 col-form-label">Remarque</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputRmq" value="">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <span class="col-sm-2"></span>
+            <div class="col-sm-2">
+                <button type="submit" class="btn btn-primary form-control">Submit</button>
+            </div>
+        </div>
+    </form>
+    <script>
+        function onFormSubmit() {
+            // prevent the form to be sent to the server
+            event.preventDefault();
+            let nom = $("#inputNom").val();
+            let prenom = $("#inputPrenom").val();
+            let date = $("#inputDate").val();
+            let aime = $("#inputAime").val();
+            let rmq = $("#inputRmq").val();
+            $("#studentsTableBody").append(`
+            <tr>
+                <td>${nom}</td>
+                <td>${prenom}</td>
+                <td>${date}</td>
+                <td>${aime}</td>
+                <td>${rmq}</td>
+                <td></td>
+                <td></td>
+            </tr>`);
+            this.reset();
+        }
+    </script>
+</body>
+
+</html>
