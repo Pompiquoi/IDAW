@@ -26,8 +26,9 @@
         <tbody id="studentsTableBody">
         </tbody>
     </table>
-    <form id="addStudentForm" action="" onsubmit="onFormSubmit();">
+    <form id="addStudentForm" action="" onsubmit="onFormSubmit();this.reset();">
         <div class="form-group row" width="300px">
+            <input type="hidden" id="inputId">
             <label for="inputNom" class="col-sm-2 col-form-label">Nom*</label>
             <div class="col-sm-3">
                 <input type="text" class="form-control" id="inputNom" required value="">

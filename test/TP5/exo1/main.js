@@ -13,9 +13,21 @@ function onFormSubmit() {
                 <td>${date}</td>
                 <td>${aime}</td>
                 <td>${rmq}</td>
-                <td></td>
-                <td></td>
+                <td><button onclick="deleteRow(this)">Supprimer</button>
+                <button onclick="modifyRow(this)" class="modi">Modifier</button>
+                <button onclick="validerModification(this)" style="display:none;" class="vali">Valider</button></td>
             </tr>`);
-    this.reset();
 }
 
+function deleteRow(button) {
+    // Supprimer la ligne parente de ce bouton
+    $(button).closest("tr").remove();
+}
+
+function modifyRow(button) {
+    // Supprimer la ligne parente de ce bouton
+    let ligne = $(button).closest("tr")
+    button.style.display = 'none';
+    document.getElementsByClassName('vali')[0].style.display = 'inline';
+
+}
