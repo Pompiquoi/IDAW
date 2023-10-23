@@ -26,8 +26,8 @@ function deleteRow(button) {
 
 function modifyRow(button) {
     // Supprimer la ligne parente de ce bouton
-    let ligne = $(button).closest("tr")
-    button.style.display = 'none';
-    document.getElementsByClassName('vali')[0].style.display = 'inline';
+    let ligne = button.parentNode.parentNode;
+    button.parentNode.getElementsByClassName('modi')[0].style.display = 'none';
+    button.parentNode.parentNode.getElementsByClassName('vali')[0].style.display = 'inline';
 
 }
